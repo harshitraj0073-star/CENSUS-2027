@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Census 2027: Digital Enumeration Portal">
+  <title>Census 2027: Digital Enumeration | Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page">
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a href="#" class="top-link">🇮🇳 Govt of India</a>
+      <a href="#" class="top-link">Ministry of Home Affairs</a>
+    </div>
+    <div class="top-bar-right">
+      <div class="social-icons">
+        <a href="#">X</a> <a href="#">FB</a> <a href="#">YT</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">🔍</button>
+      </div>
+      <div class="font-toggles">
+        <a href="#">A-</a> <a href="#">A</a> <a href="#">A+</a>
+      </div>
+      <select class="lang-dropdown">
+        <option>English</option>
+        <option>हिंदी (Hindi)</option>
+        <option>অসমীয়া (Assamese)</option>
+        <option>বাংলা (Bengali)</option>
+        <option>ગુજરાતી (Gujarati)</option>
+        <option>ಕನ್ನಡ (Kannada)</option>
+        <option>മലയാളം (Malayalam)</option>
+        <option>मराठी (Marathi)</option>
+        <option>ଓଡ଼ିଆ (Odia)</option>
+        <option>ਪੰਜਾਬੀ (Punjabi)</option>
+        <option>தமிழ் (Tamil)</option>
+        <option>తెలుగు (Telugu)</option>
+        <option>اردو (Urdu)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="header-logo-left">
+      <div class="placeholder-emblem">🏛️</div>
+      <div class="header-text">
+        <h1>Office of the Registrar General & Census Commissioner, India</h1>
+        <p>भारत के महारजिस्ट्रार एवं जनगणना आयुक्त का कार्यालय</p>
+      </div>
+    </div>
+    <div class="header-logo-right">
+      <div class="placeholder-emblem">🇮🇳</div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a href="#" class="nav-item" data-target="about-us">About Us</a></li>
+      <li><a href="#" class="nav-item" data-target="divisions">Our Divisions</a></li>
+      <li><a href="#" class="nav-item" data-target="data-resource">Data & Resource</a></li>
+      <li><a href="#" class="nav-item" data-target="media">Media</a></li>
+      <li><a href="#" class="nav-item" data-target="acts-rules">Acts & Rules</a></li>
+      <li><a href="#" class="nav-item" data-target="rti">RTI</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" class="portal-main">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h2 id="hero-title">Welcome to Census 2027</h2>
+      <p>The World's Largest Digital Enumeration. Fast, Secure, and Paperless.</p>
+      
+      <div class="hero-buttons" id="hero-action-buttons">
+        <!-- Buttons injected by app.js based on localStorage -->
+        <a href="phase1.html" class="btn-primary" id="btn-phase1">Start Phase 1</a>
+        <a href="#" class="btn-secondary" id="btn-phase2" style="display:none;">Start Phase 2</a>
+      </div>
+    </section>
+
+    <!-- Challenge Criteria: Digital Enumeration Features -->
+    <section class="portal-section">
+      <h3 class="section-title">Census 2027 Digital Initiative</h3>
+      <div class="grid-3-col">
+        <div class="content-panel">
+          <h4 class="panel-title">Phased Data Collection</h4>
+          <p><strong>Phase 1: Housing & Amenities</strong><br>Collects data on housing conditions, assets, and household amenities.</p>
+          <p><strong>Phase 2: Population Demographics</strong><br>Collects personal data including age, occupation, education, and migration.</p>
+        </div>
+        <div class="content-panel">
+          <h4 class="panel-title">State-wise Schedule</h4>
+          <table class="census-table" style="width:100%; text-align:left; color:#fff;">
+            <tr><th style="border-bottom:1px solid #FF9933">State</th><th style="border-bottom:1px solid #FF9933">Self-Enum</th></tr>
+            <tr><td>Maharashtra</td><td>1 May - 15 May</td></tr>
+            <tr><td>Uttar Pradesh</td><td>15 May - 30 May</td></tr>
+            <tr><td>Karnataka</td><td>1 Jun - 15 Jun</td></tr>
+          </table>
+        </div>
+        <div class="content-panel">
+          <h4 class="panel-title">Privacy & Security</h4>
+          <p>End-to-end encryption ensures your data remains strictly confidential. The digital portal employs multi-factor authentication and combats misinformation through official verification channels.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Data & Resource (3-column) -->
+    <section class="portal-section">
+      <h3 class="section-title">Data & Resource</h3>
+      <div class="grid-3-col">
+        <div class="icon-card"><div class="circle-icon">📊</div><a href="#" data-target="pop-finder">Population Finder 2011</a></div>
+        <div class="icon-card"><div class="circle-icon">📈</div><a href="#" data-target="tables">Census Tables</a></div>
+        <div class="icon-card"><div class="circle-icon">📚</div><a href="#" data-target="library">Digital Library</a></div>
+        <div class="icon-card"><div class="circle-icon">🌐</div><a href="#" data-target="geospatial">Geospatial Data</a></div>
+        <div class="icon-card"><div class="circle-icon">📱</div><a href="#">Mobile App</a></div>
+        <div class="icon-card"><div class="circle-icon">📰</div><a href="#" data-target="about">About ORGI</a></div>
+      </div>
+    </section>
+
+    <!-- Section 2: System Grid (2-column) -->
+    <section class="portal-section">
+      <h3 class="section-title">Key Systems</h3>
+      <div class="grid-2-col">
+        <div class="system-box">
+          <h4>📜 Civil Registration System</h4>
+          <p>Registration of Births and Deaths.</p>
+        </div>
+        <div class="system-box highlight-box">
+          <h4>📱 Self-Enumeration</h4>
+          <p>Census 2027 Portal for citizens.</p>
+        </div>
+        <div class="system-box">
+          <h4>🆔 NRIC</h4>
+          <p>National Register of Indian Citizens.</p>
+        </div>
+        <div class="system-box">
+          <h4>🗺️ Census Maps</h4>
+          <p>Geospatial enumeration tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Featured Products (4-column) -->
+    <section class="portal-section">
+      <h3 class="section-title">Featured Products</h3>
+      <div class="grid-4-col">
+        <div class="product-card">
+          <h4>Micro Data</h4>
+          <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+          <h4>District Handbooks</h4>
+          <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+          <h4>Admin Atlas</h4>
+          <a href="#">View Details</a>
+        </div>
+        <div class="product-card">
+          <h4>Online Books</h4>
+          <a href="#">View Details</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="portal-footer">
+    <div class="footer-logos">
+      <div class="gov-logo-box">Data.gov.in</div>
+      <div class="gov-logo-box">India.gov.in</div>
+      <div class="gov-logo-box">MyGov</div>
+      <div class="gov-logo-box">Digital India</div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Website Policies</a> |
+      <a href="#">Help</a> |
+      <a href="#">Contact Us</a> |
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <p>&copy; 2027 Government of India. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+<!-- DATA MODALS -->
+<div class="data-modal-overlay" id="modal-pop-finder">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Population Finder</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <div class="filter-bar">
+      <select>
+        <option>All India</option>
+        <option>Maharashtra</option>
+        <option>Uttar Pradesh</option>
+      </select>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <h3>Households</h3>
+        <div class="number">24,95,01,663</div>
+      </div>
+      <div class="stat-box">
+        <h3>Population</h3>
+        <div class="number">1,21,08,54,977</div>
+      </div>
+      <div class="stat-box">
+        <h3>Males</h3>
+        <div class="number">62,32,70,258</div>
+      </div>
+      <div class="stat-box">
+        <h3>Females</h3>
+        <div class="number">58,75,84,719</div>
+      </div>
+    </div>
+    
+    <!-- Data Visualization Criteria -->
+    <div style="margin-top: 30px; text-align: left; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+      <h3 style="color: white; margin-bottom: 15px; font-size: 1.2rem;">Demographic Visualization (Population Split)</h3>
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        <div>
+          <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 8px; font-weight: bold;">
+            <span>Males (51.5%)</span>
+            <span>62.3 Crore</span>
+          </div>
+          <div style="width: 100%; background: rgba(255,255,255,0.1); height: 28px; border-radius: 14px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);">
+            <div style="width: 51.5%; background: linear-gradient(90deg, #FF9933, #e68019); height: 100%; transition: width 1s ease-in-out;"></div>
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 8px; font-weight: bold;">
+            <span>Females (48.5%)</span>
+            <span>58.7 Crore</span>
+          </div>
+          <div style="width: 100%; background: rgba(255,255,255,0.1); height: 28px; border-radius: 14px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);">
+            <div style="width: 48.5%; background: linear-gradient(90deg, #138808, #0d6105); height: 100%; transition: width 1s ease-in-out;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-tables">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Census Tables</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <div class="filter-bar">
+      <select><option>2011</option><option>2001</option></select>
+      <select><option>Age</option><option>Education</option></select>
+    </div>
+    <table class="census-table">
+      <tr><th>Table Name</th><th>Action</th></tr>
+      <tr><td>C-14 Age by Single Year</td><td><a href="#" class="dl-btn">Download XLS</a></td></tr>
+      <tr><td>C-08 Educational Level by Age</td><td><a href="#" class="dl-btn">Download XLS</a></td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-library">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Digital Library</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box"><h3>Timeseries</h3><div class="number">1</div></div>
+      <div class="stat-box"><h3>Tables</h3><div class="number">31,245</div></div>
+      <div class="stat-box"><h3>Documents</h3><div class="number">8,832</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-about">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>About ORGI</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6;">The Office of the Registrar General and Census Commissioner, India (ORGI) was established in 1961 under the Ministry of Home Affairs. It conducts the decennial census of India.</p>
+  </div>
+</div>
+
+<!-- NEW NAV MODALS -->
+<div class="data-modal-overlay" id="modal-about-us">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>About Us</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6; text-align: left;">
+      The Indian Census is the most credible source of information on Demography, Economic Activity, Literacy and Education, Housing & Household Amenities, Urbanisation, Fertility and Mortality, Scheduled Castes and Scheduled Tribes, Language, Religion, Migration, Disability and many other socio-cultural and demographic data since 1872. Census 2027 will be the 16th Indian Census.
+    </p>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-divisions">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Our Divisions</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <ul style="color: white; text-align: left; margin-left: 20px; line-height: 1.8;">
+      <li>Census Division</li>
+      <li>Demography Division</li>
+      <li>Social Studies Division</li>
+      <li>Map Division</li>
+      <li>Data Processing Division</li>
+      <li>Language Division</li>
+    </ul>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-data-resource">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Data & Resource Directory</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6;">Access comprehensive datasets, microdata, census tables, and raw tabulations directly from the internal registry. All data requests are securely processed.</p>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-media">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Media & Press</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6;">Latest Press Releases regarding Census 2027 operations, training manuals for enumerators, and official media kits are available here.</p>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-acts-rules">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Acts & Rules</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <ul style="color: white; text-align: left; margin-left: 20px; line-height: 1.8;">
+      <li>The Census Act, 1948</li>
+      <li>The Census Rules, 1990</li>
+      <li>The Citizenship Act, 1955</li>
+      <li>Registration of Births & Deaths Act, 1969</li>
+    </ul>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-rti">
+  <div class="data-modal">
+    <div class="data-modal-header">
+      <h2>Right To Information (RTI)</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6;">Information is provided under the RTI Act 2005. Contact the Central Public Information Officer (CPIO) at ORGI Headquarters for queries related to Census data acquisition and processes.</p>
+  </div>
+</div>
+
+<div class="data-modal-overlay" id="modal-geospatial">
+  <div class="data-modal" style="width: 80%; max-width: 900px;">
+    <div class="data-modal-header">
+      <h2>Geospatial Data Repository</h2>
+      <button class="close-data-modal">×</button>
+    </div>
+    <p style="color: white; line-height: 1.6; text-align: left; margin-bottom: 20px;">
+      Welcome to the Census GIS module powered by <strong>Google Maps</strong>. This section provides interactive boundary shapefiles, district mapping, and administrative atlases for researchers and policymakers.
+    </p>
+    <!-- Google Services Usage Criteria -->
+    <div style="width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2);">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14352136.637508003!2d68.18833984375001!3d28.535516099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sus!4v1714588507886!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING AI CHATBOT -->
+<button class="chatbot-fab" id="chatbot-fab">💬 Census AI Guide</button>
+<div class="chat-window" id="chat-window">
+  <div class="chat-header">
+    <h3>AI Assistant</h3>
+    <button class="close-chat" id="close-chat">×</button>
+  </div>
+  <div class="chat-chips">
+    <span class="chip">What is SE ID?</span>
+    <span class="chip">What documents are needed?</span>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="chat-msg bot">Hello! How can I assist you with Census 2027 today?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chat-input-text" placeholder="Type a message...">
+    <button id="chat-send-btn">Send</button>
+  </div>
+</div>

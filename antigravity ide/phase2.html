@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 2: Population Enumeration | Census 2027</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page">
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a href="portal.html" class="top-link">← Back to Portal</a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-logo-left">
+      <div class="header-text">
+        <h1>Phase 2: Population Enumeration</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="portal-main">
+    <div class="form-wrapper">
+      <div class="form-header">
+        <h2 id="welcome-message">Welcome</h2>
+        <p>Please provide demographic details for each individual. (Showing 28 questions)</p>
+      </div>
+
+      <form id="phase2-form" class="census-form">
+        <fieldset>
+          <legend>Section A: Personal & Demographic Details</legend>
+          <div class="form-grid">
+            <div class="form-group"><label for="p1">1. Name of the Person</label><input type="text" id="p1" name="name" required></div>
+            <div class="form-group"><label for="p2">2. Relationship to Head</label><input type="text" id="p2" name="relationship" required></div>
+            <div class="form-group"><label>3. Sex</label><div class="radio-group"><label><input type="radio" name="sex" value="Male" required> Male</label><label><input type="radio" name="sex" value="Female"> Female</label><label><input type="radio" name="sex" value="Other"> Other</label></div></div>
+            <div class="form-group"><label for="p4">4. Date of Birth / Age</label><input type="text" id="p4" name="age" placeholder="e.g. 01/01/1990 or 35" required></div>
+            <div class="form-group"><label for="p5">5. Marital Status</label><select id="p5" name="maritalStatus" required><option value="">Select...</option><option value="never">Never Married</option><option value="married">Currently Married</option><option value="widowed">Widowed</option><option value="divorced">Divorced/Separated</option></select></div>
+            <div class="form-group"><label for="p6">6. Age at Marriage</label><input type="number" id="p6" name="ageAtMarriage" placeholder="If applicable"></div>
+            <div class="form-group"><label for="p7">7. Religion</label><select id="p7" name="religion" required><option value="">Select...</option><option value="hindu">Hindu</option><option value="muslim">Muslim</option><option value="christian">Christian</option><option value="sikh">Sikh</option><option value="buddhist">Buddhist</option><option value="jain">Jain</option><option value="other">Other</option></select></div>
+            <div class="form-group"><label for="p8">8. SC / ST / Caste</label><input type="text" id="p8" name="caste" required></div>
+            <div class="form-group"><label for="p9">9. Disability Status</label><select id="p9" name="disability" required><option value="">Select...</option><option value="none">None</option><option value="visual">Visual</option><option value="hearing">Hearing</option><option value="mobility">Mobility</option><option value="mental">Mental</option><option value="other">Other</option></select></div>
+            <div class="form-group"><label for="p10">10. Mother Tongue</label><input type="text" id="p10" name="motherTongue" required></div>
+            <div class="form-group"><label for="p11">11. Other Languages Known</label><input type="text" id="p11" name="otherLang"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Section B: Education & Economic Activity</legend>
+          <div class="form-grid">
+            <div class="form-group"><label>12. Literacy Status</label><div class="radio-group"><label><input type="radio" name="literacy" value="literate" required> Literate</label><label><input type="radio" name="literacy" value="illiterate"> Illiterate</label></div></div>
+            <div class="form-group"><label for="p13">13. Status of Attendance in Education</label><select id="p13" name="eduAttendance" required><option value="">Select...</option><option value="attending">Currently Attending</option><option value="attended_past">Attended in Past</option><option value="never">Never Attended</option></select></div>
+            <div class="form-group"><label for="p14">14. Highest Educational Level</label><input type="text" id="p14" name="highestEdu" required></div>
+            <div class="form-group"><label>15. Worker Status</label><div class="radio-group"><label><input type="radio" name="workerStatus" value="main" required> Main Worker</label><label><input type="radio" name="workerStatus" value="marginal"> Marginal Worker</label><label><input type="radio" name="workerStatus" value="non"> Non-Worker</label></div></div>
+            <div class="form-group"><label for="p16">16. Category of Economic Activity</label><input type="text" id="p16" name="econActivity"></div>
+            <div class="form-group"><label for="p17">17. Occupation / Nature of Industry</label><input type="text" id="p17" name="occupation"></div>
+            <div class="form-group"><label for="p18">18. Class of Worker</label><select id="p18" name="classOfWorker"><option value="">Select...</option><option value="employer">Employer</option><option value="employee">Employee</option><option value="single">Single Worker</option><option value="family">Family Worker</option></select></div>
+            <div class="form-group"><label for="p19">19. Non-Economic Activity</label><input type="text" id="p19" name="nonEcon"></div>
+            <div class="form-group"><label>20. Seeking / Available for Work</label><div class="radio-group"><label><input type="radio" name="seekingWork" value="yes" required> Yes</label><label><input type="radio" name="seekingWork" value="no"> No</label></div></div>
+            <div class="form-group"><label for="p21">21. Travel to Place of Work</label><input type="text" id="p21" name="commute"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Section C: Migration & Fertility</legend>
+          <div class="form-grid">
+            <div class="form-group"><label for="p22">22. Birth Place</label><input type="text" id="p22" name="birthPlace" required></div>
+            <div class="form-group"><label for="p23">23. Place of Last Residence</label><input type="text" id="p23" name="lastResidence"></div>
+            <div class="form-group"><label for="p24">24. Reason for Migration</label><select id="p24" name="migrationReason"><option value="">Select...</option><option value="work">Work/Employment</option><option value="business">Business</option><option value="education">Education</option><option value="marriage">Marriage</option><option value="family">Moved with Household</option><option value="other">Other</option></select></div>
+            <div class="form-group"><label for="p25">25. Duration of Stay at Present Village/Town</label><input type="text" id="p25" name="migrationDuration"></div>
+            <div class="form-group"><label for="p26">26. Children Surviving</label><input type="number" id="p26" name="childrenSurviving" min="0"></div>
+            <div class="form-group"><label for="p27">27. Children Ever Born</label><input type="number" id="p27" name="childrenEverBorn" min="0"></div>
+            <div class="form-group"><label for="p28">28. Children Born Alive in Last One Year</label><input type="number" id="p28" name="childrenLastYear" min="0"></div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Submit Phase 2 Demographics</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Final Success Modal -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-icon">🎉</div>
+      <h2>Phase 2 Submitted Successfully!</h2>
+      <p>Please hand this Final SE-ID to your enumerator:</p>
+      <div id="final-se-id" class="acknowledgement-code">CEN-FINAL-XXXX</div>
+      <button type="button" class="btn-primary" id="btn-finish">Return Home & Clear Session</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

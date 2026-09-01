@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 1: Houselisting | Census 2027</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="portal-page">
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <a href="portal.html" class="top-link">← Back to Portal</a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-logo-left">
+      <div class="header-text">
+        <h1>Phase 1: Houselisting & Housing Census</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="portal-main phase1-enhanced">
+    <div class="form-wrapper" id="phase1-form-wrapper">
+      <div class="form-header">
+        <h2>Household Details Schedule</h2>
+        <p>Please fill out all 31 questions accurately.</p>
+      </div>
+
+      <form id="phase1-form" class="census-form">
+        <fieldset>
+          <legend>Section A: House Identification & Basic Details</legend>
+          <div class="form-grid">
+            <div class="form-group"><label for="q1">1. Building Number</label><input type="text" id="q1" name="buildingNo" required></div>
+            <div class="form-group"><label for="q2">2. Census House Number</label><input type="text" id="q2" name="houseNo" required></div>
+            <div class="form-group"><label for="q3">3. Predominant Material</label><select id="q3" name="material" required><option value="">Select...</option><option value="mud">Mud / Thatch</option><option value="wood">Wood</option><option value="brick">Burnt Brick</option><option value="concrete">Concrete</option></select></div>
+            <div class="form-group"><label for="q4">4. Use of Census House</label><select id="q4" name="houseUse" required><option value="">Select...</option><option value="residence">Residence</option><option value="shop">Shop / Office</option><option value="school">School / Institution</option><option value="vacant">Vacant</option></select></div>
+            <div class="form-group"><label>5. Condition of House</label><div class="radio-group"><label><input type="radio" name="condition" value="good" required> Good</label><label><input type="radio" name="condition" value="livable"> Livable</label><label><input type="radio" name="condition" value="dilapidated"> Dilapidated</label></div></div>
+            <div class="form-group"><label for="q6">6. Household Number</label><input type="text" id="q6" name="householdNo" required></div>
+            <div class="form-group"><label for="q7">7. Total Persons</label><input type="number" id="q7" name="totalPersons" min="1" required></div>
+            <div class="form-group"><label for="q8">8. Name of Head</label><input type="text" id="q8" name="headName" required></div>
+            <div class="form-group"><label>9. Sex of Head</label><div class="radio-group"><label><input type="radio" name="headSex" value="Male" required> Male</label><label><input type="radio" name="headSex" value="Female"> Female</label><label><input type="radio" name="headSex" value="Other"> Other</label></div></div>
+            <div class="form-group"><label for="q10">10. SC / ST Status</label><select id="q10" name="scst" required><option value="">Select...</option><option value="sc">SC</option><option value="st">ST</option><option value="none">Neither</option></select></div>
+            <div class="form-group"><label>11. Ownership Status</label><div class="radio-group"><label><input type="radio" name="ownership" value="owned" required> Owned</label><label><input type="radio" name="ownership" value="rented"> Rented</label></div></div>
+            <div class="form-group"><label for="q12">12. Dwelling Rooms</label><input type="number" id="q12" name="rooms" min="1" required></div>
+            <div class="form-group"><label for="q13">13. Married Couples</label><input type="number" id="q13" name="couples" min="0" required></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Section B: Amenities & Facilities</legend>
+          <div class="form-grid">
+            <div class="form-group"><label for="q14">14. Main Source of Drinking Water</label><select id="q14" name="waterSource" required><option value="">Select...</option><option value="tap">Tap Water</option><option value="well">Well</option><option value="handpump">Handpump</option></select></div>
+            <div class="form-group"><label>15. Water Availability</label><div class="radio-group"><label><input type="radio" name="waterAvail" value="premises" required> Within Premises</label><label><input type="radio" name="waterAvail" value="near"> Near Premises</label><label><input type="radio" name="waterAvail" value="away"> Away</label></div></div>
+            <div class="form-group"><label for="q16">16. Main Source of Lighting</label><select id="q16" name="lighting" required><option value="">Select...</option><option value="electricity">Electricity</option><option value="kerosene">Kerosene</option><option value="solar">Solar</option><option value="other">Other</option></select></div>
+            <div class="form-group"><label>17. Latrine Access within Premises</label><div class="radio-group"><label><input type="radio" name="latrineAccess" value="yes" required> Yes</label><label><input type="radio" name="latrineAccess" value="no"> No</label></div></div>
+            <div class="form-group"><label for="q18">18. Latrine Type</label><select id="q18" name="latrineType"><option value="">Select (if applicable)...</option><option value="flush">Flush / Pour Flush</option><option value="pit">Pit Latrine</option><option value="other">Other</option></select></div>
+            <div class="form-group"><label>19. Waste Water Outlet</label><div class="radio-group"><label><input type="radio" name="wasteWater" value="closed" required> Closed Drainage</label><label><input type="radio" name="wasteWater" value="open"> Open Drainage</label><label><input type="radio" name="wasteWater" value="none"> No Drainage</label></div></div>
+            <div class="form-group"><label>20. Bathing Facility</label><div class="radio-group"><label><input type="radio" name="bathing" value="yes" required> Yes</label><label><input type="radio" name="bathing" value="no"> No</label></div></div>
+            <div class="form-group"><label>21. Kitchen Availability</label><div class="radio-group"><label><input type="radio" name="kitchen" value="inside" required> Inside House</label><label><input type="radio" name="kitchen" value="outside"> Outside</label><label><input type="radio" name="kitchen" value="none"> No Kitchen</label></div></div>
+            <div class="form-group"><label for="q22">22. Main Fuel used for Cooking</label><select id="q22" name="fuel" required><option value="">Select...</option><option value="lpg">LPG / PNG</option><option value="firewood">Firewood</option><option value="electricity">Electricity</option><option value="other">Other</option></select></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Section C: Assets & Contact</legend>
+          <div class="form-grid">
+            <div class="form-group checkbox-group">
+              <label>Assets Owned (Check all that apply):</label>
+              <label><input type="checkbox" name="assets" value="radio" id="q23"> 23. Radio/Transistor</label>
+              <label><input type="checkbox" name="assets" value="tv" id="q24"> 24. Television</label>
+              <label><input type="checkbox" name="assets" value="internet" id="q25"> 25. Internet Access</label>
+              <label><input type="checkbox" name="assets" value="laptop" id="q26"> 26. Laptop / Computer</label>
+              <label><input type="checkbox" name="assets" value="mobile" id="q27"> 27. Mobile / Telephone</label>
+              <label><input type="checkbox" name="assets" value="bike" id="q28"> 28. Two-Wheeler / Bicycle</label>
+              <label><input type="checkbox" name="assets" value="car" id="q29"> 29. Car / Jeep / Van</label>
+            </div>
+            <div class="form-group">
+              <label for="q30">30. Main Cereal Consumed</label>
+              <input type="text" id="q30" name="cereal" placeholder="e.g. Rice, Wheat" required>
+            </div>
+            <div class="form-group">
+              <label for="q31">31. Mobile Number</label>
+              <input type="tel" id="q31" name="mobile" pattern="[0-9]{10}" placeholder="10 digits" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Submit Phase 1 Schedule</button>
+      </form>
+    </div>
+
+    <!-- Phase 1 Success Container -->
+    <div class="success-container phase1-success" id="phase1-success-container" style="display: none; background: transparent; border: none; box-shadow: none;">
+      <div class="success-icon">✅</div>
+      <h2 style="color: #000080;">Phase 1 Submitted Successfully!</h2>
+      <p style="color: #000080; font-size: 1.2rem; font-weight: 600;">Your 11-Digit Self-Enumeration ID is:</p>
+      <div class="acknowledgement-code" id="phase1-new-id" style="background: transparent; color: #000080; border: 2px dashed #000080; padding: 10px 20px;"></div>
+      <p style="color: #000080; font-size: 1.1rem; font-weight: 500;">Please keep this safe for Phase 2.</p>
+      <button class="btn-primary" id="btn-return-portal" style="background: #000080; padding: 15px 30px; font-size: 1.2rem; margin-top: 20px;">Return to Portal</button>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
